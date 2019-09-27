@@ -1,0 +1,11 @@
+.container {
+  padding: 2.4rem;
+}
+
+.bookCover {
+  height: 5rem;
+  width: 5rem;
+  margin-right: 1.6rem;
+  border-radius: 4px;
+  object-fit: contain;
+}

@@ -1,0 +1,9 @@
+.container * {
+  color: unset;
+}
+
+.container {
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 0 2px 8px var(--shadow);
+}

@@ -1,9 +1,12 @@
 import React from 'react'
-import { Table } from 'antd'
+import { Table, Button } from 'antd'
 
 import list from './List.module.css'
 
-const List = () => {
+const List = (
+  {
+    history
+  }) => {
   const columns = [
     {
       title: 'Title',
@@ -26,7 +29,7 @@ const List = () => {
     {
       title: 'Download',
       render: link => (
-        <a href='#'>Download</a>
+        <a href='/'>Download</a>
       ),
     },
   ];
@@ -61,11 +64,13 @@ const List = () => {
   return (
     <div className={list.container}>
       <Table
+        className={list.table}
         columns={columns}
         dataSource={data}
         bordered
         pagination={false}
       />
+      <Button type="primary" icon='plus' onClick={() => history.push('/add')}>Add New</Button>
     </div>
   );
 };

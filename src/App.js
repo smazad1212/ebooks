@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 
 import Header from './components/Header/Header'
 import List from './components/List/List'
+import AddBook from './components/Form/AddBook'
 
 const App = () => {
   document.title = "E-Books"
@@ -11,7 +12,7 @@ const App = () => {
       <Header />
 
       <Route exact path="/" component={List} />
-      {/*<Route path="/about" component={About} />*/}
+      <Route path="/add" component={AddBook} />
     </Router>
   )
 }
